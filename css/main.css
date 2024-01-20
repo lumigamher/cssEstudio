@@ -1,0 +1,15 @@
+#titulo {
+    color: tomato;
+}
+
+p.especial {
+    color: blue;
+}
+
+div p {
+    color: darkblue;
+}
+
+div h2 {
+    color: blueviolet;
+}
