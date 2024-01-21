@@ -135,3 +135,11 @@ span {
     height: 55px;
     background-color: red;
 }
+
+.center {
+    text-align: center;
+    
+    width: 200px;
+    margin: 0 auto;
+    background-color: red;
+}
