@@ -98,10 +98,16 @@
     para que no sea ignorado
 
 8. MARGIN y padding margenes afuera y adentro de los elementos 
-    1. margenes afuera:
+    1. a.margenes afuera:
 
         margin: 15px 20px 25px 30px;
                 top rigth bottom left
+        
+        b.espacio dentro del elemento 
+
+        padding: 30px 25px 20px 15px;
+                top rigth bottom left
+
 
         margin: 15px;
 
@@ -109,12 +115,146 @@
         con dos valores el primero es los verticales 
         y el segundo los horizontales 
 
+9. overflow
+    se utiliza para acomodar el contenido cuando este no cabe en su caja
+    tiene varias opcioes para ocultar visibilizar escrolear que le agrega scrolñ para poder ver el elemento
 
-    2. espacio dentro del elemento 
+    overflow: scroll; /hidden para ocultar /visible
 
-        padding: 30px 25px 20px 15px;
-                top rigth bottom left
+10. outline
+    se utiliza para agregar una linea afuera del borde 
+    
+    outline: 1px solid red;
+            TAMAÑO/TIPO DE LINEA/COLOR   
+     
 
+11. TEXTO
+    text-align: justify;
+
+        para alinear justificar posicionar texto 
+        con justify se justifica en el espacio que tiene disponible
+
+    text-decoration: line-through;
+
+        esto me agrega decoraciones como tachado negrilla etc
+    
+    text-shadow: 3px 4px 3px blue;
+
+        esto agrega sobra siendo los valores en px los desplazamientos en los ejes 
+        y el ultimo valor el color
+
+12. FUENTES
+
+    font-family: "Roboto", sans-serif;
+
+    Propiedades para interactuar 
+
+        le asigna una propiedad mientras no se haya pulsado el link
+        a:link {
+            color: yellow;
+        }
+
+        le asigna propiedasdes cuenado ya ha visitado el link
+        a:visited {
+            color: gray;
+        }
+
+        Le asigna una propiedad cuando pasa el mouse por ensima 
+        a:hover {
+            color: blueviolet;
+        }
+
+        a:active {
+            color: red;
+        }
+
+13. LISTAS
+
+    Las comunes son list-style que permite cambiar las viñetas 
+    el padding igual que entodas cambia el margen hacia adentro 
+    se le pueden agregar atributos de color backgrund etc
+
+    ul {
+        background-color: cadetblue;
+        list-style: none;
+        padding-left: 0%;
+        /* list-style-position: inside; */
+
+    }
+
+14. TABLAS
+
+
+        table {
+            width: 100%;
+            border-collapse: collapse; <-- esta hace que se colapcsen los bordes y se vea todo encerrado
+
+        }
+        th, td {
+            border: solid 1px black; le asigna borses a cada elemento arriba los une con collapse
+            text-align: left; alinea a la izquierda
+        }
+
+        este selector me sirve para escojer valores en especifico
+        en este caso coje las filas impares con el even 
+        tr:nth-child(even) {
+            background-color: #eee;
+        }
+        
+        el hover me permite agregar funciones cuando pase el cursor por cada fila 
+        o columba segun ponga la etiqueta esta vez es tr de fila 
+        th de colmna
+
+        tr:hover {
+            background-color: aquamarine;
+            cursor: pointer;
+        }
+
+15. display
+
+span {
+    display: block; /*hace salto le asigna un bloque de pantalla*/
+    max-width: 300px;
+    background-color: aqua;
+}
+
+.inline {
+    display: inline; /*los pone sobre la misma linea*/  
+}
+
+16. position 
+    position: relative; 
+    es una posicion que es relativa a donde debiera estar posicionado
+    este elemento
+
+    position: fixed;
+    le indica que debe tener una posicion pero con respecto 
+    a lo que se ve en el explorador 
+    se queda fijo en la pantalla asi escrolleemos
+
+    position: absolute;
+    se posiciona relativo con el elemento padre mas cercano a el 
+    por defecto es body si no hay otro
+
+    position: sticky;
+
+    es una mescla entre relative y fixed
+    
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+      
 
 
 
