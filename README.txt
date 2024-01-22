@@ -239,8 +239,37 @@ span {
     position: sticky;
 
     es una mescla entre relative y fixed
-    
 
+17. float inline-blok etc
+    .left {
+        float: left;
+        width: 400px;
+    }
+    .rigth {
+        float: right;
+    }
+
+    .container {
+        height: 200px;
+    }
+
+    .column {
+        width: 33%;
+    }
+
+    .inline-block {
+        display: inline-block; esto ayuda para que le aportemos propiedades de altura o ancho
+        height: 55px;
+        background-color: red;
+    }
+
+    .center {
+        text-align: center;
+        
+        width: 200px;
+        margin: 0 auto;
+        background-color: red;
+    }
 
 
 
